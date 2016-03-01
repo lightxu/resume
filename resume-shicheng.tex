@@ -1,0 +1,127 @@
+% !TEX TS-program = xelatex
+% !TEX encoding = UTF-8 Unicode
+% !Mode:: "TeX:UTF-8"
+
+\documentclass{resume}
+\usepackage{zh_CN-Adobefonts_external} % Simplified Chinese Support using external fonts (./fonts/zh_CN-Adobe/)
+%\usepackage{zh_CN-Adobefonts_internal} % Simplified Chinese Support using system fonts
+\usepackage{linespacing_fix} % disable extra space before next section
+\usepackage{cite}
+
+\begin{document}
+\pagenumbering{gobble} % suppress displaying page number
+
+\name{Shicheng Xu}
+
+% {E-mail}{mobilephone}{homepage}
+% be careful of _ in emaill address
+\contactInfo{lightxuzju@gmail.com}{(+1) 412-980-5297}{http://lightxu.com}
+% {E-mail}{mobilephone}
+% keep the last empty braces!
+%\contactInfo{xxx@yuanbin.me}{(+86) 131-221-87xxx}{}
+ 
+\section{\faGraduationCap\ Education}
+\datedsubsection{\textbf{Carnegie Mellon University, Silicon Valley}, Mountain View, CA}{Jan. 2016 -- Present}
+\textit{Master student} in Software Engineering, expected June 2017
+\datedsubsection{\textbf{Zhejiang University}, Hangzhou, China}{Sept. 2010 -- Oct. 2014}
+\textit{B.S.} of Engineering in Computer Science\\
+Entered Pursuit Science Class (Computer Science) at Chu Kochen Honors College
+
+\section{\faUsers\ Experience}
+\datedsubsection{\textbf{SSNoC}, Course Team Project}{Jan 2016 -- Present}
+\role{Full-stack developer}{Foundation of Software Engineering}
+In a natural disaster scenario, Survivable Social Network on a Chip(SSNoC) can provide a local network that allows
+users to touch base with their neighbors and exchange information.
+\begin{itemize}
+  \item Develop a web application on a beaglebone chip with Sqlite/ExpressJS/AngularJS/NodeJS
+  \item Learn front-end/backend testing with Selenium and Mocha
+  \item Give a presentation on ``Enhancing front-end development with AngularJS and jQuery''
+\end{itemize}
+
+\datedsubsection{\textbf{Twitter Analytics Web Service}, Course Team Project}{Jan 2016 -- Present}
+\role{Full-stack developer}{Cloud Computing}
+Build a performant and reliable web service on the cloud within a specified budget that can process and analyze massive twitter data.
+\begin{itemize}
+  \item Design, develop, deploy and optimize functional web-servers that can handle a high load (\~{}tens of thousands of requests per second).
+  \item Implement Extract Transform and Load (ETL) on a large data set (\~{}1 TB) and load into MySQL and HBase systems.
+\end{itemize}
+
+\datedsubsection{\textbf{Carnegie Mellon University}, Pittsburgh, PA}{July 2014 -- Dec. 2015}
+\role{Visiting Researcher}{Professor: Alex Hauptmann}
+Aladdin Video Project is short for Automated Low-Level Analysis and Description of Diverse INtelligence\\
+E-LAMP Prototype System is a content-based video event search and content tag creation system
+\begin{itemize}
+  \item Standardizing preprocessing modules by defining Dockerfiles and building Docker images
+  \item Implementing a job scheduler to run modules on AWS with ECS, Dynamo DB, and S3
+  \item Implemented a user interface to visualize a backend machine learning model, which helps the
+user to incrementally refine a video query
+  \item Developed a web application to connect the user interface to backend search modules
+\end{itemize}
+
+\datedsubsection{\textbf{NIST TRECVid MER 2014}}{July 2014 -- Sept. 2014}
+\role{Participant}{CMU Informedia Group}
+NIST TRECVid is a contest on video retrieval evaluation to encourage research in automatic segmentation, indexing, and content-based retrieval of digital video\\
+Multimedia event recounting(MER) recounts the evidence for the presence of the detected event in each search video determined to contain it
+\begin{itemize}
+  \item Analyzed and defined the taxonomy on 2500+ concept detectors for semantic query searches
+  \item Built a pipeline to recount event detection results from event detectors and semantic queries
+  \item The system utilizes shortest video duration and get 57\% positive response
+\end{itemize}
+
+\datedsubsection{\textbf{NIST TRECVid MED 2013}}{Fall 2013}
+\role{Participant}{CMU Informedia Group}
+NIST TRECVid is a contest on video retrieval evaluation to encourage research in automatic segmentation, indexing, and content-based retrieval of digital video\\
+The goal of MED(Multimedia Event Detection) is to assemble core detection technologies into a system that can search multimedia recordings for user-defined events based on pre-computed metadata
+\begin{itemize}
+  \item Responsible for feature extraction(SIFT/Color SIFT/MFCC/Dense Trajectory)
+  \item  Implemented Cascade SVM on Hadoop for paralyzing detector training 
+\end{itemize}
+
+% Reference Test
+%\datedsubsection{\textbf{Paper Title\cite{zaharia2012resilient}}}{May. 2015}
+%An xxx optimized for xxx\cite{verma2015large}
+%\begin{itemize}
+%  \item main contribution
+%\end{itemize}
+
+\section{\faCogs\ Skills}
+\begin{itemize}[parsep=0.5ex]
+  \item Programming Languages: C == (Python, Ruby, Javascript) > (C++, Java, PHP) > (Bash, Awk, MATLAB)
+  \item Platform: (Debian, Ubuntu, Fedora) == Mac > Windows
+  \item Cloud service: AWS > Rocks Cluster > Hadoop > Azure
+\end{itemize}
+
+\section{\faHeartO\ Honors and Awards}
+\datedline{\textbf{Best demo award} for E-LAMP system at International Conference on Multimedia Retrieval }{2015}
+\datedline{\textbf{Best performer} on Multimedia Event Detection task at NIST TRECVid }{2014}
+\datedline{\textbf{Outstanding Graduates} of Zhejiang University }{2014}
+\datedline{\textbf{Excellent Student Awards} of Zhejiang University }{2011, 2012, 2013}
+\datedline{\textbf{Silver Prize} on The 9th Zhejiang Provincial ACM/ICPC Collegiate Programming Contest }{2012}
+\datedline{\textbf{Scholarship for Excellence in Research and Innovation} of Zhejiang University }{2011}
+\datedline{\textbf{First Prize}, National Olympiad in Informatics in Provinces (NOIP) }{Jun. 2013}
+
+\section{\faInfo\ Miscellaneous}
+\begin{itemize}[parsep=0.5ex]
+  \item Languages: English - Professional, Mandarin, Wu - Native speaker, French - Beginner
+  \item Document: \LaTeX = MarkDown > (Haml, Jade, Jinja2) > HTML
+  \item Instruments: Electrical Guitar, Electrical Piano
+  \item Sports: Swimming, Biking, Running, Tennis, Table tennis
+  \item GitHub: https://github.com/lightxu
+  \item Twitter: https://twitter.com/shichengxu
+  \item Facebook: https://www.facebook.com/lightxuzju
+\end{itemize}
+
+\section{\faUsers\ Activities}
+\datedline{\textbf{Budai(布袋)} marathon running team of Zhejiang University }{2012 – 2014}
+\datedline{\textbf{Full marathon (5h2m30s)}, Dick's Sporting Goods Pittsburgh Marathon }{2015}
+\datedline{\textbf{Half marathon}, ASICS Hangzhou Mountain Cross Marathon }{2013}
+\datedline{\textbf{Full marathon (4h5m45s)}, C\&D Xiamen International Marathon }{2013}
+\datedline{\textbf{Full marathon (3h52m45s)}, Hangzhou International Marathon }{2012}
+\datedline{\textbf{Bronze medal}, Zhejiang University Sports Meeting Men's 5000-meters Race }{2012}
+\datedline{Winner of monthly champion in the CCTV Samsung Intelligent Express Show}{2007}
+
+%% Reference
+%\newpage
+%\bibliographystyle{IEEETran}
+%\bibliography{mycite}
+\end{document}
